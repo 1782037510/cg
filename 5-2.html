@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈广31 用户调研表</title>
+    <style type="text/css">
+       body,form,p,label,input,select,textarea{margin: 0;padding: 0;background-color: transparent;}
+       form{
+        margin: 50px auto;
+        background: #f5fdff;
+        width: 750px;
+        height: 800px;
+        padding: 10px 80px 0;
+        font-size: 14px;
+        color: #83775e;
+        font-family: "微软雅黑";
+       }
+       h2{
+        text-align: center;
+        height: 40px;
+       }
+       p{
+        width: 400px;
+        height: 37px;
+        padding-left: 50px;
+        line-height: 37px;
+        font-size: 16;
+       }
+       .title1{background: url(images/num1.png) no-repeat left center;}
+       .title2{background: url(images/num2.png) no-repeat left center;}
+       .title3{background: url(images/num3.png) no-repeat left center;}
+       label{
+        display: block;
+        width: 210px;
+        padding: 5px 0 0 50px;
+       }
+       .txt{
+        width: 748px;
+        height: 300px;
+        border: 1px solid #83775e;
+        margin-top: 10px;
+        font-size: 24px;
+        resize: none;
+       }
+       .choose{
+        height: 30px;
+        padding: 12px 0 0 5px;
+        background-color:#e1c2ae;
+        font-weight: bold;
+       }
+       select{
+        width: 80px;
+        border: 1px solid #666;
+        background-color: #f5f5f5;
+       }
+       .choose1{
+        width: 100px;
+        margin-right: 20px;
+       }
+       .btn{margin-top: 10px;}
+       .btn1,.btn2,.btn3{
+        width: 100px;
+        height: 24px;
+        background-color: #eee;
+        border: 1px solid #ccc;
+       }
+       .btn1{background-color: #e1c2ae;}
+       .btn3{margin-left: 440px;}
+    </style>
+</head>
+<body>
+    <form action="#" method="post" id="list">
+        <h2>用户调研表</h2>
+        <div class="one">
+            <p class="title1">您的年龄区间是（）。（单选）</p>
+            <label for="choose1"><input type="radio" name="item1" id="choose1">19岁以下</label>
+            <label for="choose2"><input type="radio" name="item1" id="choose2">20-29岁</label>
+            <label for="choose3"><input type="radio" name="item1" id="choose3">30-39岁</label>
+            <label for="choose4"><input type="radio" name="item1" id="choose4">40岁以上</label>
+        </div>
+        <div class="two">
+            <p class="title2">您通过什么渠道了解到人工智能技术（）。（多选）</p>
+            <label for="choose5"><input type="checkbox" name="item2" id="choose5">网络新闻</label>
+            <label for="choose6"><input type="checkbox" name="item2" id="choose6">商场宣传</label>            
+            <label for="choose7"><input type="checkbox" name="item2" id="choose7">朋友推荐</label>
+            <label for="choose8"><input type="checkbox" name="item2" id="choose8">自身爱好</label>
+        </div>
+        <div class="three">
+            <p class="title3">您对人工智能技术有什么问题或建议。（问答）</p>
+            <textarea class="txt" cols="30" rows="10"></textarea>
+            <div class="choose">
+                <span>分类：</span>
+                <select class="choose1">
+                    <option>智能穿戴设备</option>
+                    <option selected="selected">技术方案</option>
+                    <option>其他问题</option>
+                </select>
+                <span>重要程度：</span>
+                <select>
+                    <option>简单问题</option>
+                    <option>一般问题</option>
+                    <option>重要问题</option>
+                </select>
+            </div>
+            <div class="btn">
+                <input class="btn1" type="submit" value="提 交">
+                <input class="btn2" type="reset" value="取 消">
+                <input class="btn3" type="button" value="保存草稿">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
